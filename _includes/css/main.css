@@ -31,9 +31,8 @@ h3,
 h4,
 h5,
 h6 {
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 600;
 }
 
 .img-centered {
@@ -49,23 +48,7 @@ header {
 header .container {
     padding-top: 100px;
     padding-bottom: 50px;
-    position: relative;
 }
-
-header .container::before {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-image: url('img/portfolio/thumbnail2.png');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    opacity: 0.5; /* Adjust the opacity to your preference */
-    z-index: -1; /* Ensure the image is below the content */
-}
-
 
 header img {
     display: block;
@@ -74,10 +57,9 @@ header img {
 
 header .intro-text .name {
     display: block;
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 2em;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 header .intro-text .skills {
@@ -166,7 +148,7 @@ section.success::before {
     right: 0;
     bottom: 0;
     left: 0;
-    background-image: url('img/portfolio/thumbnail2.png');
+    background-image: url('img/portfolio/thumbnail4.png');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -348,16 +330,16 @@ footer {
 }
 
 footer h3 {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 footer .footer-above {
-    padding-top: 50px;
+    padding-top: 20px;
     background-color: #{{ site.color.secondary }};
 }
 
 footer .footer-col {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 footer .footer-below {
