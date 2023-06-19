@@ -36,46 +36,6 @@ h6 {
     font-weight: 700;
 }
 
-hr.star-light,
-hr.star-primary {
-    margin: 25px auto 30px;
-    padding: 0;
-    max-width: 250px;
-    border: 0;
-    border-top: solid 5px;
-    text-align: center;
-    overflow: visible;
-}
-
-hr.star-light:after,
-hr.star-primary:after {
-    content: "\f005";
-    display: inline-block;
-    position: relative;
-    top: -.8em;
-    padding: 0 .25em;
-    font-family: FontAwesome;
-    font-size: 2em;
-}
-
-hr.star-light {
-    border-color: #fff;
-}
-
-hr.star-light:after {
-    color: #fff;
-    background-color: #{{ site.color.primary }};
-}
-
-hr.star-primary {
-    border-color: #{{ site.color.secondary }};
-}
-
-hr.star-primary:after {
-    color: #{{ site.color.secondary }};
-    background-color: #fff;
-}
-
 .img-centered {
     margin: 0 auto;
 }
@@ -89,7 +49,23 @@ header {
 header .container {
     padding-top: 100px;
     padding-bottom: 50px;
+    position: relative;
 }
+
+header .container::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url('img/portfolio/thumbnail2.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 0.5; /* Adjust the opacity to your preference */
+    z-index: -1; /* Ensure the image is below the content */
+}
+
 
 header img {
     display: block;
@@ -126,7 +102,6 @@ header .intro-text .skills {
 
 @media(min-width:768px) {
     .navbar-fixed-top {
-        padding: 25px 0;
         -webkit-transition: padding .3s;
         -moz-transition: padding .3s;
         transition: padding .3s;
@@ -149,9 +124,8 @@ header .intro-text .skills {
 }
 
 .navbar {
-    text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .navbar a:focus {
@@ -181,9 +155,25 @@ section h2 {
 }
 
 section.success {
+    position: relative;
     color: #fff;
-    background: #{{ site.color.primary }};
 }
+
+section.success::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url('img/portfolio/thumbnail2.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 0.9; /* Adjust to your preference */
+    z-index: -1; /* Ensure the image is below the content */
+}
+
 
 @media(max-width:767px) {
     section {
