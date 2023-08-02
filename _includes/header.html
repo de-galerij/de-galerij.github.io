@@ -1,15 +1,40 @@
 <!-- Header -->
 <header>
-  <div class="container introduction">
-    <div class="row">
-      <div class="col-lg-12">
-        <img class="img-responsive" src="img/logo.png" alt="profile-pic" />
-<!--        <div class="intro-text">-->
-<!--          <span class="name">{{ site.title }}</span>-->
-<!--          <hr class="star-light" />-->
-<!--          <span class="skills">{{ site.skills }}</span>-->
-<!--        </div>-->
-      </div>
+    <div class="container introduction">
+        <div class="row">
+            <div class="col-lg-12">
+                <img class="img-responsive" src="img/logo.png" alt="profile-pic"/>
+
+                <!-- Slideshow container -->
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <img src="img/portfolio/thumbnail.png" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="img/portfolio/thumbnail1.png" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="img/portfolio/thumbnail2.png" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="img/portfolio/thumbnail3.png" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="img/portfolio/thumbnail4.png" style="width:100%">
+                    </div>
+
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+
+            </div>
+        </div>
     </div>
-  </div>
 </header>
+
+<script src="js/slideshow.js"></script>

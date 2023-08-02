@@ -31,7 +31,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 600;
 }
 
@@ -57,7 +57,7 @@ header img {
 
 header .intro-text .name {
     display: block;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 2em;
     font-weight: 600;
 }
@@ -69,8 +69,8 @@ header .intro-text .skills {
 
 @media(min-width:768px) {
     header .container {
-        padding-top: 200px;
-        padding-bottom: 100px;
+        padding-top: 150px;
+        padding-bottom: 70px;
     }
 
     header .intro-text .name {
@@ -148,7 +148,8 @@ section.success::before {
     right: 0;
     bottom: 0;
     left: 0;
-    background-image: url('img/portfolio/thumbnail4.png');
+    background-color: #27384f;
+    /*background-image: url('img/portfolio/thumbnail2.png');*/
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -453,4 +454,8 @@ footer .footer-below {
 .modal.fade.in {
     transform: translateZ(0);
     -webkit-transform: translateZ(0);
+}
+
+.about {
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
