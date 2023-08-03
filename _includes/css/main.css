@@ -459,3 +459,12 @@ footer .footer-below {
 .about {
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
+
+.leftimage {
+    float: left;
+    margin: 0px 10px 10px 0px;
+}
+
+#contact {
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
