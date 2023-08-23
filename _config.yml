@@ -26,13 +26,13 @@ disqus_shortname: myshortname
 # Color settings (hex-codes without the leading hash-tag)
 color:
   primary: ded9db #B10135
-  secondary: 930424 #FD6E8A
-  secondary-dark: 930424 #A2122F
+  secondary: 800000 #FD6E8A
+  secondary-dark: 800000 #A2122F
 
 # Footer settings
 footer:
   copyright: Gustavo Bakker
-  location: Plaats
+  location: Adres
   social: Links
   credits: Contact
 

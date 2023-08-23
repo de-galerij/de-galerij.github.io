@@ -1,8 +1,8 @@
 ---
 layout: default
 modal-id: 4
-date: 2014-07-15
-img: image31.jpg
+date: 2014-04-15
+img: frame4.jpg
 alt: image-alt
 project-date: April 2014
 ---
