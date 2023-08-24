@@ -2,7 +2,7 @@
 layout: default
 modal-id: 4
 date: 2014-04-15
-img: frame4.jpg
+img: frame4-removebg-preview.png
 alt: image-alt
 project-date: April 2014
 ---
