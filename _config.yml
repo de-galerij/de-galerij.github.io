@@ -33,13 +33,13 @@ color:
 footer:
   copyright: Gustavo Bakker
   location: Adres
-  social: Links
+#  social: Links
   credits: Contact
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
-social:
-  - title: linkedin
-    url: https://www.linkedin.com/in/cees.bakker-12345/
+#social:
+#  - title: linkedin
+#    url: https://www.linkedin.com/in/cees.bakker-12345/
 
 # Postal address (add as many lines as necessary)
 address:
