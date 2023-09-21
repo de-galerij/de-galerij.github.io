@@ -1,8 +1,8 @@
 ---
 layout: default
 modal-id: 6
-date: 2014-07-15
+date: 2023-07-15
 img: frame6.jpg
 alt: image-alt
-project-date: April 2014
+project-date: Juli 2023
 ---
