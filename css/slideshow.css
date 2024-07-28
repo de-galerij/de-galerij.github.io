@@ -56,7 +56,7 @@
 }
 
 .closure-banner {
-    background-color: #f8d7da;
+    background-color: #ffea9d;
     color: #721c24;
     text-align: center;
     padding: 10px;
@@ -73,5 +73,5 @@
 }
 
 body {
-    padding-top: 110px; /* Adjust this value to account for both the navbar and the banner */
+    padding-top: 100px; /* Adjust this value to account for both the navbar and the banner */
 }
