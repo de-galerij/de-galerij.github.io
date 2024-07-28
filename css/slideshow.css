@@ -54,16 +54,3 @@
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
-
-.closure-banner {
-    background-color: #f8d7da;
-    color: #721c24;
-    text-align: center;
-    padding: 10px;
-    font-weight: bold;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-}
