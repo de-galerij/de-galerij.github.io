@@ -68,8 +68,16 @@
     z-index: 1050;
 }
 
+/* Default for desktop */
 .navbar-fixed-top {
     top: 40px; /* Adjust this value based on the height of your banner */
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+    .navbar-fixed-top {
+        top: 75px; /* Adjust this value based on the height of your banner for mobile */
+    }
 }
 
 body {
