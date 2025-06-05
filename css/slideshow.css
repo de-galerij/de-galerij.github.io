@@ -70,16 +70,16 @@
 
 /* Default for desktop */
 .navbar-fixed-top {
-    top: 40px; /* Adjust this value based on the height of your banner */
+    top: 0px; /* Adjust this value based on the height of your banner 40px */
 }
 
 /* For mobile devices */
 @media (max-width: 768px) {
     .navbar-fixed-top {
-        top: 75px; /* Adjust this value based on the height of your banner for mobile */
+        top: 0px; /* Adjust this value based on the height of your banner for mobile 75px */
     }
 }
 
 body {
-    padding-top: 100px; /* Adjust this value to account for both the navbar and the banner */
+    padding-top: 60px; /* Adjust this value to account for both the navbar and the banner 60px or 100px*/
 }

@@ -47,7 +47,7 @@ address:
   - line: 1017 ST - Amsterdam
 
 # Credits content
-credits: 'info@de-galerij.nl • +31(0) 20 627 82 26 • K.v.K. 33136884 • BTWnr. 301 60 765B01'
+credits: 'degalerijbakker@ziggo.nl • +31(0) 20 627 82 26 • K.v.K. 33136884 • BTWnr. 301 60 765B01'
 
 # Build settings
 markdown: kramdown
