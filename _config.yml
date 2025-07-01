@@ -1,6 +1,6 @@
 # Site settings
 title: De Galerij
-email: degalerijbakker@hetnet.nl
+email: degalerijbakker@ziggo.nl
 url: https://github.com/jeromelachaud/freelancer-theme
 description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
 keywords: "your keywords, separated by commas"
@@ -47,7 +47,7 @@ address:
   - line: 1017 ST - Amsterdam
 
 # Credits content
-credits: 'degalerijbakker@ziggo.nl • +31(0) 20 627 82 26 • K.v.K. 33136884 • BTWnr. 301 60 765B01'
+credits: 'degalerijbakker@ziggo.nl • +31(0) 20 627 82 26 • K.v.K. 97528595 • BTWnr. 301 60 765B01'
 
 # Build settings
 markdown: kramdown
