@@ -1,49 +1,40 @@
 <!-- Portfolio Grid Section -->
 <section id="portfolio">
     <div class="container portfolio-flex-grid">
-        <div class="row description">
-            <div class="col-lg-8 col-lg-offset-2 text-center">
-                <h2>Voorbeelden</h2>
-                </br>
-                <hr class="hr-star">
-                </br>
-            </div>
+        <div class="section-title">
+            <span class="eyebrow">Voorbeelden</span>
+            <h2>Een greep uit ons werk</h2>
+            <div class="section-divider"><i class="fas fa-square"></i></div>
         </div>
+
         <div class="portfolio-flex-row">
             {% for post in site.posts %}
             <div class="portfolio-flex-item portfolio-item">
                 <a href="#portfolioModal-{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
+                    <img src="img/portfolio/{{ post.img }}" alt="{{ post.alt }}" loading="lazy">
                     <div class="caption">
                         <div class="caption-content">
-                            <i class="fa fa-search-plus fa-3x"></i>
+                            <i class="fa fa-search-plus"></i>
+                            <span>Bekijk</span>
                         </div>
                     </div>
-                    <img src="img/portfolio/{{ post.img }}" class="img-responsive" alt="{{ post.alt }}">
                 </a>
             </div>
             {% endfor %}
         </div>
-        <div class="row description">
-            <div class="col-lg-8">
-                <p>&nbsp;<b>&nbsp;Te koop aangeboden</b></p>
 
-                <ul>
-                    <li>Partij kleine lijsten voor 500 euro, ongeveer 50 stuks; ideaal voor winkel in snuisterijern,
-                        etalages of
-                        voor een mooie wand met persoonlijke herinneringen.&nbsp;Ook per stuk of in kleinere
-                        hoeveelheden te
-                        koop voor aantrekkelijke prijzen. &nbsp;&nbsp;
-                    </li>
-                    <li>In handwerklijst met ontspiegeld glas ingelijste krijttekening van Jenny Pierik. Tamelijk
-                        abstract,
-                        lijkt &nbsp;op een zee- of berggezicht. Prijs: € 925,- exc. BTW.
-                    </li>
-                    <li>Altijd oude, gebruikte lijsten in de aanbieding voor meeneemprijzen.</li>
-                </ul>
-
-            </div>
+        <div class="for-sale">
+            <h3><span class="tag">Te koop</span> Aangeboden in de winkel</h3>
+            <ul>
+                <li>Partij kleine lijsten voor € 500&#8209;, ongeveer 50 stuks; ideaal voor een winkel in snuisterijen,
+                    etalages of voor een mooie wand met persoonlijke herinneringen. Ook per stuk of in kleinere
+                    hoeveelheden te koop voor aantrekkelijke prijzen.
+                </li>
+                <li>In handwerklijst met ontspiegeld glas ingelijste krijttekening van Jenny Pierik — tamelijk
+                    abstract, lijkt op een zee- of berggezicht. Prijs: € 925&#8209; excl. BTW.
+                </li>
+                <li>Altijd oude, gebruikte lijsten in de aanbieding voor meeneemprijzen.</li>
+            </ul>
         </div>
     </div>
 </section>
-
-

@@ -1,20 +1,21 @@
 <!-- Portfolio Modals -->
 {% for post in site.posts %}
-<div class="portfolio-modal modal" id="portfolioModal-{{ post.modal-id }}" tabindex="-1" role="dialog"
+<div class="portfolio-modal modal fade" id="portfolioModal-{{ post.modal-id }}" tabindex="-1" role="dialog"
      aria-hidden="true">
     <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
+        <div class="close-modal" data-dismiss="modal" role="button" aria-label="Sluit venster">
             <div class="lr">
-                <div class="rl">
-                </div>
+                <div class="rl"></div>
             </div>
         </div>
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
                     <div class="modal-body">
-                        <!--            <h2>{{ post.title }}</h2>-->
-                        <!--            <hr class="star-primary">-->
+                        {% if post.title %}
+                        <h2>{{ post.title }}</h2>
+                        <div class="section-divider" style="margin: 16px auto 28px;"><i class="fas fa-square"></i></div>
+                        {% endif %}
                         <img src="img/portfolio/{{ post.img }}" class="img-responsive img-centered"
                              alt="{{ post.alt }}">
                         {% if post.description %}
@@ -22,23 +23,17 @@
                         {% endif %}
                         <ul class="list-inline item-details">
                             {% if post.client %}
-                            <li>Client:
-                                <strong>{{ post.client }}</strong>
-                            </li>
+                            <li>Klant: <strong>{{ post.client }}</strong></li>
                             {% endif %}
                             {% if post.project-date %}
-                            <li>Datum:
-                                <strong>{{ post.project-date }}</strong>
-                            </li>
+                            <li>Datum: <strong>{{ post.project-date }}</strong></li>
                             {% endif %}
                             {% if post.category %}
-                            <li>Service:
-                                <strong>{{ post.category }}</strong>
-                            </li>
+                            <li>Service: <strong>{{ post.category }}</strong></li>
                             {% endif %}
                         </ul>
-                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>
-                            Sluit
+                        <button type="button" class="btn btn-ghost" data-dismiss="modal">
+                            <i class="fa fa-times" aria-hidden="true"></i> Sluit
                         </button>
                     </div>
                 </div>

@@ -1,46 +1,78 @@
-<!-- Header -->
+<!-- Hero / Header — split layout: text left, slideshow right -->
 <header>
-    <div class="container introduction">
-        <div class="row">
-            <div class="col-lg-12">
-<!--                <img class="img-responsive d-md-none d-lg-block" src="img/logo.png" alt="profile-pic"/>-->
+    <div class="hero">
 
-                <!-- Slideshow container -->
-                <div class="slideshow-container">
-                    <div class="mySlides fade">
-                        <img src="img/gallery/thumbnail0.png" style="width:100%">
-                    </div>
-
-                    <div class="mySlides fade">
-                        <img src="img/gallery/thumbnail1.jpg" style="width:100%">
-                    </div>
-
-                    <div class="mySlides fade">
-                        <img src="img/gallery/thumbnail2.png" style="width:100%">
-                    </div>
-
-                    <div class="mySlides fade">
-                        <img src="img/gallery/thumbnail3.png" style="width:100%">
-                    </div>
-
-                    <div class="mySlides fade">
-                        <img src="img/gallery/thumbnail4.png" style="width:100%">
-                    </div>
-
-                    <!-- Next and previous buttons -->
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                </div>
-
+        <!-- Left: brand text -->
+        <div class="hero-text">
+            <span class="hero-eyebrow">Sinds 1976 &middot; Amsterdam</span>
+            <h1 class="hero-title">De Galerij</h1>
+            <p class="hero-tagline">Lijstenmakerij &middot; Vakwerk in het Spiegelkwartier</p>
+            <div class="hero-actions">
+                <a href="#portfolio" class="btn btn-primary page-scroll">Bekijk ons werk</a>
+                <a href="#contact" class="btn btn-outline page-scroll">Maak een afspraak</a>
             </div>
         </div>
+
+        <!-- Right: rounded image slideshow -->
+        <div class="hero-gallery">
+            <div class="slideshow-container">
+                <div class="mySlides slide-fade">
+                    <img src="img/gallery/thumbnail0.png" alt="De Galerij lijstenmakerij">
+                </div>
+                <div class="mySlides slide-fade">
+                    <img src="img/gallery/thumbnail1.jpg" alt="Inlijstwerk De Galerij">
+                </div>
+                <div class="mySlides slide-fade">
+                    <img src="img/gallery/thumbnail2.png" alt="Inlijstwerk De Galerij">
+                </div>
+                <div class="mySlides slide-fade">
+                    <img src="img/gallery/thumbnail3.png" alt="Inlijstwerk De Galerij">
+                </div>
+                <div class="mySlides slide-fade">
+                    <img src="img/gallery/thumbnail4.png" alt="Inlijstwerk De Galerij">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)" role="button" aria-label="Vorige">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)"  role="button" aria-label="Volgende">&#10095;</a>
+                <div class="slide-dots" id="slide-dots"></div>
+            </div>
+        </div>
+
+        <a href="#about" class="hero-scroll page-scroll" aria-label="Scroll naar inhoud">
+            <span>Ontdek</span>
+            <span class="chev" aria-hidden="true"></span>
+        </a>
+
     </div>
 </header>
 
-<style>
-    img {
-        max-height: 600px; /* Adjust this value as needed */
-        object-fit: contain; /* This makes sure the images are resized correctly */
-    }
-</style>
 <script src="js/slideshow.js"></script>
+<script>
+/* Dot navigation synced with the slideshow */
+(function () {
+    var dots  = document.getElementById('slide-dots');
+    var total = document.querySelectorAll('.hero-gallery .mySlides').length;
+    if (!dots || !total) return;
+
+    for (var i = 0; i < total; i++) {
+        var s = document.createElement('span');
+        s.setAttribute('data-idx', i + 1);
+        s.onclick = (function (n) { return function () { plusSlides(n - slideIndex); }; })(i + 1);
+        dots.appendChild(s);
+    }
+
+    var origShow = window.showSlides;
+    window.showSlides = function (n) {
+        origShow(n);
+        var all = dots.querySelectorAll('span');
+        all.forEach(function (el) { el.classList.remove('active'); });
+        var active = slideIndex - 1;
+        if (all[active]) all[active].classList.add('active');
+    };
+
+    /* Trigger once to set initial dot */
+    setTimeout(function () {
+        var all = dots.querySelectorAll('span');
+        if (all[0]) all[0].classList.add('active');
+    }, 50);
+})();
+</script>

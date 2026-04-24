@@ -1,89 +1,96 @@
 <!-- Contactsectie -->
 <section id="contact">
     <div class="container">
-        <div class="row text-center" style="margin-bottom: 50px">
-            <div class="col-lg-12">
-                <h2>Contact</h2>
-            </div>
+        <div class="section-title">
+            <span class="eyebrow">Contact</span>
+            <h2>Kom langs of schrijf ons</h2>
+            <div class="section-divider"><i class="fas fa-square"></i></div>
         </div>
-        <div class="row d-flex justify-content-center text-center" style="margin-bottom: 70px">
-            <!--            <p>Heeft u vragen, bel ons of stel uw vraag via dit formulier en wij zullen zo snel mogelijk reageren.</p>-->
-            <div class="d-flex flex-column flex-lg-row justify-content-center">
-                <div class="col-lg-5 mx-2 col-lg-offset-1">
-                    <form action="https://formspree.io/f/xnqkgbzq" method="POST" name="sentMessage" id="contactForm"
-                          novalidate>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label for="name">Naam</label>
-                                <input type="text" name="name" class="form-control" placeholder="Naam" id="name"
-                                       required
-                                       data-validation-required-message="Voer alstublieft uw naam in.">
-                                <p class="help-block text-danger"></p>
-                            </div>
+
+        <div class="contact-grid">
+            <div class="contact-card">
+                <h3>Stuur ons een bericht</h3>
+                <form action="https://formspree.io/f/xnqkgbzq" method="POST" name="sentMessage" id="contactForm"
+                      novalidate>
+                    <div class="row control-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <label for="name">Naam</label>
+                            <input type="text" name="name" class="form-control" placeholder="Uw naam" id="name"
+                                   required
+                                   data-validation-required-message="Voer alstublieft uw naam in.">
+                            <p class="help-block text-danger"></p>
                         </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label for="email">E-mailadres</label>
-                                <input type="email" name="_replyto" class="form-control" placeholder="E-mailadres"
-                                       id="email" required
-                                       data-validation-required-message="Voer alstublieft uw e-mailadres in.">
-                                <p class="help-block text-danger"></p>
-                            </div>
+                    </div>
+                    <div class="row control-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <label for="email">E-mailadres</label>
+                            <input type="email" name="_replyto" class="form-control" placeholder="naam@voorbeeld.nl"
+                                   id="email" required
+                                   data-validation-required-message="Voer alstublieft uw e-mailadres in.">
+                            <p class="help-block text-danger"></p>
                         </div>
-                        <div>
-                            <input type="hidden" name="_subject" value="Nieuwe inzending!">
-                            <input type="text" name="_gotcha" style="display:none"/>
+                    </div>
+                    <div>
+                        <input type="hidden" name="_subject" value="Nieuwe inzending!">
+                        <input type="text" name="_gotcha" style="display:none"/>
+                    </div>
+                    <div class="row control-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <label for="message">Bericht</label>
+                            <textarea rows="5" name="message" class="form-control"
+                                      placeholder="Vertel ons kort over uw project of vraag"
+                                      id="message" required
+                                      data-validation-required-message="Voer alstublieft een bericht in."></textarea>
+                            <p class="help-block text-danger"></p>
                         </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label for="message">Bericht</label>
-                                <textarea rows="5" name="message" class="form-control" placeholder="Bericht"
-                                          id="message"
-                                          required
-                                          data-validation-required-message="Voer alstublieft een bericht in."></textarea>
-                                <p class="help-block text-danger"></p>
-                            </div>
+                    </div>
+                    <div id="success"></div>
+                    <div class="row">
+                        <div class="form-group col-xs-12">
+                            <button type="submit" class="btn btn-primary btn-lg">
+                                Verzenden <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                            </button>
                         </div>
-                        <br>
-                        <div id="success"></div>
-                        <div class="row">
-                            <div class="form-group col-xs-12">
-                                <button type="submit" class="btn btn-success btn-lg">Verzenden</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <div class="col-lg-5 mx-2">
+                    </div>
+                </form>
+            </div>
+
+            <div class="contact-card">
+                <h3>Vind ons in Amsterdam</h3>
+                <div class="map-frame">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9745.98722648568!2d4.8899849!3d52.3614111!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c609ec7f19427d%3A0xe9d93140afb475a!2sDe%20Galerij%20Bakker!5e0!3m2!1sen!2snl!4v1691014831173!5m2!1sen!2snl"
-                            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="De Galerij op de kaart"></iframe>
                 </div>
             </div>
         </div>
-        <div style="margin-top: 50px" class="row d-flex justify-content-around">
-            <div class="col-lg-4">
+
+        <div class="info-row">
+            <div class="info-card">
+                <span class="info-icon"><i class="fas fa-map-marker-alt"></i></span>
+                <h4>Adres</h4>
+                <p>Tweede Weteringdwarsstraat 55<br>1017 ST — Amsterdam</p>
+            </div>
+            <div class="info-card">
+                <span class="info-icon"><i class="far fa-clock"></i></span>
+                <h4>Openingstijden</h4>
+                <p>Woensdag t/m vrijdag<br>10.00 – 16.30<br><em>In de ochtend op afspraak.</em></p>
+            </div>
+            <div class="info-card">
+                <span class="info-icon"><i class="fas fa-phone"></i></span>
+                <h4>Direct contact</h4>
                 <p>
-                    <span style="display: none;">&nbsp;</span>
-                    <img alt="Frame maker Cees Bakker" height="160" src="img/Cees-Bakker.jpg"
-                         width="340">
+                    <a href="tel:+31206278226">+31 (0)20 627 82 26</a><br>
+                    <a href="mailto:degalerijbakker@ziggo.nl">degalerijbakker@ziggo.nl</a>
                 </p>
             </div>
-            <div class="col-lg-4 description" style="margin-bottom: 30px">
-                <b><u>Openingstijden</u>: Woensdag t/m vrijdag: 10.00 – 16.30; in de ochtend op afspraak.
-                    </br>
-                    Om zeker te zijn dat ik in De Galerij ben, neem gerust eerst contact met mij op.
-                    </br>
-                </b>
-<!--                 </br>-->
-<!--                <b><u>Kennisgeving</u>: Vrijdag 16 mei gesloten-->
-<!--                </b>-->
-            </div>
-            <div class="col-lg-4 description">
-                <img alt="logo-art&amp;frame" class="leftimage" height="91"
-                     src="img/logo-art-en-frame.jpg" width="45">
-                Wij zijn lid van de branchevereniging van lijstenmakers en garanderen hoge kwaliteit van onze producten
-                en advies.
-            </div>
+        </div>
+
+        <div class="bvlm-badge">
+            <img alt="Branchevereniging van lijstenmakers" src="img/logo-art-en-frame.jpg">
+            <span>Wij zijn lid van de branchevereniging van lijstenmakers en garanderen hoge kwaliteit van
+                onze producten en advies.</span>
         </div>
     </div>
 </section>

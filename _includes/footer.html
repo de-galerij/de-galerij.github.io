@@ -7,24 +7,30 @@
           <h3>{{ site.footer.location }}</h3>
           <p>
             {% for adress in site.address %}
-            {{ adress.line }} <br>
+            {{ adress.line }}<br>
             {% endfor %}
           </p>
         </div>
         <div class="footer-col col-md-4">
-          <h3>{{ site.footer.social }}</h3>
-          <ul class="list-inline">
+          <h3>Openingstijden</h3>
+          <p>Woensdag t/m vrijdag<br>10.00 – 16.30<br>In de ochtend op afspraak</p>
+          <ul class="list-inline" style="margin-top:14px">
             {% for network in site.social %}
             <li>
-              <a href="{{ network.url }}" class="btn-social btn-outline"><i
-                  class="fa-brands fa-fw fa-{{ network.title }}"></i></a>
+              <a href="{{ network.url }}" class="btn-social btn-outline" aria-label="{{ network.title }}">
+                <i class="fa-brands fa-fw fa-{{ network.title }}"></i>
+              </a>
             </li>
             {% endfor %}
           </ul>
         </div>
         <div class="footer-col col-md-4">
           <h3>{{ site.footer.credits }}</h3>
-          <p>{{ site.credits }}</p>
+          <p>
+            <a href="mailto:degalerijbakker@ziggo.nl">degalerijbakker@ziggo.nl</a><br>
+            <a href="tel:+31206278226">+31 (0)20 627 82 26</a>
+          </p>
+          <p style="font-size:13px; opacity:.75; margin-top:10px">K.v.K. 97528595 · BTW-nr. NL868093816B01</p>
         </div>
       </div>
     </div>
@@ -33,7 +39,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          Copyright &copy; {{ site.footer.copyright }} 20{{ site.time | date: '%y' }}
+          &copy; {{ site.time | date: '%Y' }} {{ site.footer.copyright }} — Lijstenmakerij sinds 1976
         </div>
       </div>
     </div>
@@ -42,7 +48,7 @@
 
 <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
 <div class="scroll-top page-scroll visible-xs visible-sm">
-  <a class="btn btn-primary" href="#page-top">
+  <a class="btn btn-primary" href="#page-top" aria-label="Terug naar boven">
     <i class="fa fa-chevron-up"></i>
   </a>
 </div>

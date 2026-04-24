@@ -1,9 +1,10 @@
 # Site settings
-title: De Galerij
+title: De Galerij — Lijstenmakerij sinds 1976
 email: degalerijbakker@ziggo.nl
-url: https://github.com/jeromelachaud/freelancer-theme
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
-keywords: "your keywords, separated by commas"
+url: https://degalerij.github.io
+description: "De Galerij is een Amsterdamse lijstenmakerij sinds 1976, gespecialiseerd in het vakkundig en creatief inlijsten van kunst, prenten, foto's en persoonlijke herinneringen."
+keywords: "lijstenmakerij, inlijsten, Amsterdam, Spiegelkwartier, passe-partout, schilderijen inlijsten, prenten inlijsten, museumlijsten, De Galerij, Cees Bakker"
+tagline: Vakwerk in lijsten sinds 1976
 skills: lijstenmakerij
 meta_author: Cees Bakker
 
@@ -14,7 +15,7 @@ google_verify:
 bing_verify:
 
 # Contact form:
-# - static : pass through formspree.io to validate email sending
+# - static : pass through formspree.io to validate email sending
 # - disqus : replace contact form by disqus thread
 # - comment the line below if you want to stick with the default PHP contact form
 contact: static
@@ -25,15 +26,17 @@ disqus_shortname: myshortname
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
-  primary: ded9db #B10135
-  secondary: 800000 #FD6E8A
-  secondary-dark: 800000 #A2122F
+  primary: 7a2233
+  primary-rgb: "122, 34, 51"
+  secondary: 2a2523
+  secondary-dark: 1a1614
+  accent: b8935a
+  cream: f7f3ed
 
 # Footer settings
 footer:
-  copyright: Gustavo Bakker
-  location: Adres
-#  social: Links
+  copyright: De Galerij
+  location: Bezoekadres
   credits: Contact
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
@@ -44,10 +47,10 @@ footer:
 # Postal address (add as many lines as necessary)
 address:
   - line: Tweede Weteringdwarsstraat 55
-  - line: 1017 ST - Amsterdam
+  - line: 1017 ST — Amsterdam
 
 # Credits content
-credits: 'degalerijbakker@ziggo.nl • +31(0) 20 627 82 26 • K.v.K. 97528595 • BTWnr. NL868093816B01'
+credits: 'degalerijbakker@ziggo.nl • +31 (0)20 627 82 26 • K.v.K. 97528595 • BTW-nr. NL868093816B01'
 
 # Build settings
 markdown: kramdown

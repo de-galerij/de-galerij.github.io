@@ -1,60 +1,35 @@
-* {box-sizing: border-box}
+* { box-sizing: border-box; }
 
-/* Slideshow container */
+/* Standalone slideshow container (legacy / non-hero use) */
 .slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
+    position: relative;
+    margin: 0 auto;
+    max-width: 1000px;
 }
 
-.mySlides {
-  display: none;
-  opacity: 0;
-  transition: opacity 1s;
-}
+/* Slides */
+.mySlides { display: none; }
 
-.fade {
-  animation: fade 6s linear infinite;
-}
-
-@keyframes fade {
-  0% {opacity: 0;}
-  20% {opacity: 1;}
-  80% {opacity: 1;}
-  100% {opacity: 0;}
-}
-
-/* Next & previous buttons */
+/* Default prev/next buttons (for non-hero slideshows) */
 .prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  user-select: none;
-  z-index: 200; /* Ensure the arrows are always above the images */
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    user-select: none;
+    z-index: 200;
 }
+.next { right: 0; }
+.prev { left: 0; }
+.prev:hover, .next:hover { background-color: rgba(0, 0, 0, 0.5); }
 
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-}
-
-/* Position the "prev button" to the left */
-.prev {
-  left: 0;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
+/* Closure banner */
 .closure-banner {
     background-color: #ffea9d;
     color: #721c24;
@@ -68,18 +43,25 @@
     z-index: 1050;
 }
 
-/* Default for desktop */
-.navbar-fixed-top {
-    top: 0px; /* Adjust this value based on the height of your banner 40px */
+/* ─── Body offset for fixed navbar ───
+   All page content starts below the fixed navbar via body padding-top.
+   This is the standard Bootstrap 3 pattern and the only reliable way to
+   guarantee nothing is ever hidden behind the bar on any device.            */
+body { padding-top: 60px; }
+html { scroll-padding-top: 60px; }
+
+@media (max-width: 767px) {
+    body { padding-top: 54px; }
+    html { scroll-padding-top: 54px; }
 }
 
-/* For mobile devices */
-@media (max-width: 768px) {
-    .navbar-fixed-top {
-        top: 0px; /* Adjust this value based on the height of your banner for mobile 75px */
-    }
+/* Fading animation */
+.slide-fade {
+    animation-name: slideFade;
+    animation-duration: 1.5s;
 }
 
-body {
-    padding-top: 60px; /* Adjust this value to account for both the navbar and the banner 60px or 100px*/
+@keyframes slideFade {
+    from { opacity: .4; } 
+    to { opacity: 1; }
 }
